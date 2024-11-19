@@ -15,8 +15,8 @@ function addTodoItem(text) {
 
   // Crea un nuovo elemento <li>
   const todoItem = document.createElement("li");
-  const todoSpan = document.createElement("span");
-  todoSpan.textContent = text;
+  //const todoSpan = document.createElement("span");
+  todoItem.textContent = text;
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Elimina";
   deleteBtn.classList.add("delete-btn");
@@ -27,7 +27,7 @@ function addTodoItem(text) {
   });
 
   // Aggiungi il testo e il pulsante Elimina all'elemento <li>
-  todoItem.appendChild(todoSpan);
+
   todoItem.appendChild(deleteBtn);
 
   // Aggiungi il nuovo elemento <li> alla lista
